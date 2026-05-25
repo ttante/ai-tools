@@ -4,6 +4,18 @@ All notable user-facing, API, migration, security, AI/model, and operational cha
 
 Use this format:
 
+## Unreleased
+
+### Added
+
+- Added a non-destructive bootstrap script for installing agent rules, wrapper files, changelog, environment example, and starter docs into a project repo.
+- Added a `docs/README.md` index explaining the starter documentation templates.
+
+### Changed
+
+- Updated README usage guidance to make the bootstrap script the fastest setup path.
+- Updated agent-file usage guidance to point developers to the bootstrap script.
+
 ## `<version or date>`
 
 ### Added
@@ -29,4 +41,3 @@ Use this format:
 ### Rollback Notes
 
 - `<item>`
-

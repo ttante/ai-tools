@@ -8,6 +8,36 @@ The [`agent-files/`](./agent-files/) directory contains copy-ready AI agent inst
 
 The [`docs/`](./docs/) directory contains starter documentation templates for architecture, features, APIs, users, admins, business notes, operations, security, data governance, local/cloud runtime, releases, tickets, AI planning, AI evals, AI cost tracking, scalability, decision history, and ADRs.
 
+## Quick Start
+
+From any new or existing project repo, run:
+
+```sh
+/path/to/aiToolsShared/scripts/bootstrap-project.sh .
+```
+
+The script installs:
+
+- `AGENTS.md`
+- `CLAUDE.md`
+- `GEMINI.md`
+- `.github/copilot-instructions.md`
+- starter `docs/` templates
+- `CHANGELOG.md`
+- `.env.example`
+
+By default, existing files are skipped so local work is not overwritten. Use `--force` only when you intentionally want to replace existing files:
+
+```sh
+/path/to/aiToolsShared/scripts/bootstrap-project.sh . --force
+```
+
+Agent files only:
+
+```sh
+/path/to/aiToolsShared/scripts/bootstrap-project.sh . --no-docs
+```
+
 ## Rules
 
 The rules define how AI coding agents should build and maintain projects, including:
@@ -51,6 +81,8 @@ cp /path/to/aiToolsShared/agent-files/.github/copilot-instructions.md .github/co
 ```
 
 Copy any relevant starter docs from this repository's `docs/` directory into the new repo, then replace placeholders with project-specific details.
+
+The bootstrap script does this setup automatically. Manual copying is mainly useful when you want only a few specific files.
 
 For most new app repos, copy this starter set:
 

@@ -11,6 +11,14 @@ Copy these files into a new project repository root when bootstrapping AI agent 
 
 ## Usage
 
+Recommended:
+
+```sh
+/path/to/aiToolsShared/scripts/bootstrap-project.sh /path/to/new-repo --no-docs
+```
+
+Manual copy:
+
 ```sh
 cp agent-files/AGENTS.md /path/to/new-repo/AGENTS.md
 cp agent-files/CLAUDE.md /path/to/new-repo/CLAUDE.md
